@@ -13,6 +13,7 @@ import numpy
 from PIL import Image
 from PIL import ImageEnhance
 import time
+
 from requests import session, post, adapters
 adapters.DEFAULT_RETRIES = 5
 
