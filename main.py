@@ -275,7 +275,7 @@ def get_account():
 
 def waitting(): 
      """设置随机的等待时间 """ 
-     random_min = random.randint(0,5) 
+     random_min = random.randint(0,1) 
      random_sec = random.randint(0,60) 
      waitting_time = random_min * 60 + random_sec 
      time.sleep(waitting_time) 
