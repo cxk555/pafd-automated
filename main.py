@@ -12,7 +12,7 @@ import io
 import numpy
 from PIL import Image
 from PIL import ImageEnhance
-
+import time
 from requests import session, post, adapters
 adapters.DEFAULT_RETRIES = 5
 
@@ -271,8 +271,16 @@ def get_account():
 
     return uid, psw
 
+def waitting(): 
+     """设置随机的等待时间 """ 
+     random_min = random.randint(0,5) 
+     random_sec = random.randint(0,60) 
+     waitting_time = random_min * 60 + random_sec 
+     time.sleep(waitting_time) 
+
 
 if __name__ == '__main__':
+    waitting()
     uid, psw = get_account()
     # print(uid, psw)
     zlapp_login = 'https://uis.fudan.edu.cn/authserver/login?' \
