@@ -17,6 +17,7 @@ import random
 from requests import session, post, adapters
 adapters.DEFAULT_RETRIES = 5
 
+
 class Fudan:
     """
     建立与复旦服务器的会话，执行登录/登出操作
