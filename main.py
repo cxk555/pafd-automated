@@ -281,7 +281,7 @@ def waitting():
 
 if __name__ == '__main__':
     # 等待一段随机时间
-#     waitting()
+    waitting()
     uid, psw = get_account()
     # print(uid, psw)
     zlapp_login = 'https://uis.fudan.edu.cn/authserver/login?' \
